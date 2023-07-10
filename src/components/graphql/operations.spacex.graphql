@@ -1,0 +1,11 @@
+query GetLaunches($limit: Int) {
+  launches(limit: $limit) {
+    launch_date_utc
+    rocket {
+      rocket {
+        name
+        success_rate_pct
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+query GetCountries($filter: CountryFilterInput) {
+	countries(filter: $filter) {
+    code
+    name
+    emoji
+  }
+}
